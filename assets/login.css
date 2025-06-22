@@ -1,0 +1,28 @@
+  body {
+    font-family: Arial, sans-serif;
+  }
+
+  .body-bg {
+    background-color: #1e1e1e;
+  }
+
+  .custom-card {
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    max-width: 900px;
+    width: 100%;
+  }
+
+  .logo-img {
+    width: 250px;
+    height: auto;
+    margin-bottom: 50px;
+  }
+
+  .illustration-img {
+    max-width: 90%;
+    height: auto;
+    display: block;
+    margin: auto;
+  }
