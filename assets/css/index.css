@@ -1,0 +1,56 @@
+html, body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo-img {
+    width: 250px;
+    height: auto;
+    margin-bottom: 50px;
+}
+
+.illustration-img {
+    max-width: 90%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+.features-grid-container {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);/
+}
+
+.feature-card {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 2px solid #495057;
+    border-right: 2px solid #495057;
+}
+
+.feature-card:nth-child(2n) {
+    border-right: none;
+}
+
+.feature-card:nth-last-child(-n + 2) {
+    border-bottom: none;
+}
+
+
+.job-card {
+    border-radius: 15px;
+    padding: 25px;  
+    max-width: 400px;
+    width: 100%;
+}
+
+.job-card .tag-badge {
+    color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    display: inline-block;
+}
