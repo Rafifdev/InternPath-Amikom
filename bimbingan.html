@@ -25,7 +25,7 @@
       }
 
       .pagination .page-link {
-        color: #000 ; /* Teks putih */
+        color: #000; /* Teks putih */
       }
 
       .pagination .page-link:hover {
@@ -62,7 +62,10 @@
               <p class="text-muted fs-5 mb-2">Menu</p>
               <ul class="nav flex-column">
                 <li class="nav-item">
-                  <a class="nav-link active" href="#">
+                  <a
+                    class="nav-link"
+                    href="dashboard.html"
+                  >
                     <i class="fa-solid fa-chart-pie"></i>
                     Dashboard
                   </a>
@@ -74,7 +77,7 @@
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="bimbingan.html">
+                  <a class="nav-link active" href="#">
                     <i class="fa-solid fa-folder"></i>
                     Data Bimbingan
                   </a>
@@ -128,7 +131,7 @@
                   class="fa-regular fa-window-maximize"
                   style="transform: rotate(-90deg)"
                 ></i>
-                <p class="m-0">Data Mahasiswa</p>
+                <p class="m-0">Data Bimbingan</p>
               </div>
 
               <!-- search -->
@@ -177,43 +180,32 @@
             <div class="container-fluid p-4">
               <!-- Status -->
               <div class="d-flex gap-4 mb-4">
+
+                <!-- Dosen -->
+                <div class="bg-dark text-light rounded-3" style="width: 33.3%">
+                  <div class="p-4">
+                    <p class="mb-3 fs-5">Dosen 📑</p>
+                    <h3>250</h3>
+                  </div>
+                </div>
+
                 <!-- Mahasiswa -->
-                <div class="bg-dark text-light rounded-3" style="width: 20%">
+                <div class="bg-dark text-light rounded-3" style="width: 33.3%">
                   <div class="p-4">
-                    <p class="mb-3 fs-5">Mahasiswa 📊</p>
-                    <h3>2.000</h3>
+                    <p class="mb-3 fs-5">Mahasiswa 📑</p>
+                    <h3>500</h3>
                   </div>
                 </div>
 
-                <!-- Disetujui -->
-                <div class="bg-dark text-light rounded-3" style="width: 20%">
+                <!-- Manipulasi Data -->
+                <div class="bg-dark text-light rounded-3" style="width: 33.3%">
                   <div class="p-4">
-                    <p class="mb-3 fs-5">Disetujui ✅</p>
-                    <h3>2.000</h3>
-                  </div>
-                </div>
-
-                <!-- Ditolak -->
-                <div class="bg-dark text-light rounded-3" style="width: 20%">
-                  <div class="p-4">
-                    <p class="mb-3 fs-5">Ditolak ❌</p>
-                    <h3>2.000</h3>
-                  </div>
-                </div>
-
-                <!-- Direvisi -->
-                <div class="bg-dark text-light rounded-3" style="width: 20%">
-                  <div class="p-4">
-                    <p class="mb-3 fs-5">Direvisi 📝</p>
-                    <h3>2.000</h3>
-                  </div>
-                </div>
-
-                <!-- Approval -->
-                <div class="bg-dark text-light rounded-3" style="width: 20%">
-                  <div class="p-4">
-                    <p class="mb-3 fs-5">Approval 📑</p>
-                    <h3>2.000</h3>
+                    <p class="mb-3 fs-5">Manipulasi Data</p>
+                    <div class="d-flex justify-content-between">
+                      <p class="">➕ Tambah</p>
+                      <p class="">✏️ Edit</p>
+                      <p class="">➖ Hapus</p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -228,10 +220,10 @@
                       <th scope="col">No.</th>
                       <th scope="col">Nama</th>
                       <th scope="col">NIM</th>
-                      <th scope="col">Fakultas</th>
                       <th scope="col">Prodi</th>
+                      <th scope="col">Dospem</th>
                       <th scope="col">Magang</th>
-                      <th scope="col">Status</th>
+                      <th scope="col">Jadwal</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -239,153 +231,155 @@
                       <th scope="row">1</th>
                       <td>Rafif labied alekhan</td>
                       <td>24.01.5148</td>
-                      <td>FIK</td>
                       <td>D3TI</td>
+                      <td>Firman Asharudin, S.K</td>
                       <td>PT. Mencari Cinta Sejati</td>
-                      <td>✅</td>
+                      <td> 23-5-2025</td>
                     </tr>
                     <tr>
                       <th scope="row">2</th>
                       <td>Rafif labied alekhan lorem ip..</td>
                       <td>24.01.5148</td>
-                      <td>FIK</td>
                       <td>D3TI</td>
+                      <td>Firman Asharudin, S.K</td>
                       <td>PT. Mencari Cinta Sejati</td>
-                      <td>❌</td>
+                      <td> 23-5-2025</td>
                     </tr>
                     <tr>
                       <th scope="row">3</th>
                       <td>Rafif labied alekhan lorem ip..</td>
                       <td>24.01.5148</td>
-                      <td>FIK</td>
                       <td>D3TI</td>
+                      <td>Firman Asharudin, S.K</td>
                       <td>PT. Mencari Cinta Sejati</td>
-                      <td>📝</td>
+                      <td> 23-5-2025</td>
                     </tr>
                     <tr>
                       <th scope="row">4</th>
                       <td>Rafif labied alekhan lorem ip..</td>
                       <td>24.01.5148</td>
-                      <td>FIK</td>
                       <td>D3TI</td>
+                      <td>Firman Asharudin, S.K</td>
                       <td>PT. Mencari Cinta Sejati</td>
-                      <td>✅</td>
+                      <td> 23-5-2025</td>
                     </tr>
                     <tr>
                       <th scope="row">5</th>
                       <td>Rafif labied alekhan lorem ip..</td>
                       <td>24.01.5148</td>
-                      <td>FIK</td>
                       <td>D3TI</td>
+                      <td>Firman Asharudin, S.K</td>
                       <td>PT. Mencari Cinta Sejati</td>
-                      <td>✅</td>
+                      <td> 23-5-2025</td>
                     </tr>
                     <tr>
                       <th scope="row">6</th>
                       <td>Rafif labied alekhan lorem ip..</td>
                       <td>24.01.5148</td>
-                      <td>FIK</td>
                       <td>D3TI</td>
+                      <td>Firman Asharudin, S.K</td>
                       <td>PT. Mencari Cinta Sejati</td>
-                      <td>✅</td>
+                      <td> 23-5-2025</td>
                     </tr>
                     <tr>
                       <th scope="row">7</th>
                       <td>Rafif labied alekhan lorem ip..</td>
                       <td>24.01.5148</td>
-                      <td>FIK</td>
                       <td>D3TI</td>
+                      <td>Firman Asharudin, S.K</td>
                       <td>PT. Mencari Cinta Sejati</td>
-                      <td>📝</td>
+                      <td> 23-5-2025</td>
                     </tr>
                     <tr>
                       <th scope="row">8</th>
                       <td>Rafif labied alekhan lorem ip..</td>
                       <td>24.01.5148</td>
-                      <td>FIK</td>
                       <td>D3TI</td>
+                      <td>Firman Asharudin, S.K</td>
                       <td>PT. Mencari Cinta Sejati</td>
-                      <td>❌</td>
+                      <td> 23-5-2025</td>
                     </tr>
                     <tr>
                       <th scope="row">9</th>
                       <td>Rafif labied alekhan lorem ip..</td>
                       <td>24.01.5148</td>
-                      <td>FIK</td>
                       <td>D3TI</td>
+                      <td>Firman Asharudin, S.K</td>
                       <td>PT. Mencari Cinta Sejati</td>
-                      <td>📝</td>
+                      <td> 23-5-2025</td>
                     </tr>
                     <tr>
                       <th scope="row">10</th>
                       <td>Rafif labied alekhan lorem ip..</td>
                       <td>24.01.5148</td>
-                      <td>FIK</td>
                       <td>D3TI</td>
+                      <td>Firman Asharudin, S.K</td>
                       <td>PT. Mencari Cinta Sejati</td>
-                      <td>✅</td>
+                      <td> 23-5-2025</td>
                     </tr>
                     <tr>
                       <th scope="row">11</th>
                       <td>Rafif labied alekhan lorem ip..</td>
                       <td>24.01.5148</td>
-                      <td>FIK</td>
                       <td>D3TI</td>
+                      <td>Firman Asharudin, S.K</td>
                       <td>PT. Mencari Cinta Sejati</td>
-                      <td>✅</td>
+                      <td> 23-5-2025</td>
                     </tr>
                     <tr>
                       <th scope="row">12</th>
                       <td>Rafif labied alekhan lorem ip..</td>
                       <td>24.01.5148</td>
-                      <td>FIK</td>
                       <td>D3TI</td>
+                      <td>Firman Asharudin, S.K</td>
                       <td>PT. Mencari Cinta Sejati</td>
-                      <td>✅</td>
+                      <td> 23-5-2025</td>
                     </tr>
                     <tr>
                       <th scope="row">13</th>
                       <td>Rafif labied alekhan lorem ip..</td>
                       <td>24.01.5148</td>
-                      <td>FIK</td>
                       <td>D3TI</td>
+                      <td>Firman Asharudin, S.K</td>
                       <td>PT. Mencari Cinta Sejati</td>
-                      <td>❌</td>
+                      <td> 23-5-2025</td>
                     </tr>
                     <tr>
                       <th scope="row">14</th>
                       <td>Rafif labied alekhan lorem ip..</td>
                       <td>24.01.5148</td>
-                      <td>FIK</td>
                       <td>D3TI</td>
+                      <td>Firman Asharudin, S.K</td>
                       <td>PT. Mencari Cinta Sejati</td>
-                      <td>📝</td>
+                      <td> 23-5-2025</td>
                     </tr>
                     <tr>
                       <th scope="row">15</th>
                       <td>Rafif labied alekhan lorem ip..</td>
                       <td>24.01.5148</td>
-                      <td>FIK</td>
                       <td>D3TI</td>
+                      <td>Firman Asharudin, S.K</td>
                       <td>PT. Mencari Cinta Sejati</td>
-                      <td>✅</td>
+                      <td> 23-5-2025</td>
                     </tr>
                   </tbody>
                 </table>
               </div>
 
               <!-- Pagination -->
-              <div class="d-flex justify-content-center mt-4 ">
-                <ul class="pagination pagination-lg border border-dark rounded-3">
-                  <li class="page-item ">
+              <div class="d-flex justify-content-center mt-4">
+                <ul
+                  class="pagination pagination-lg border border-dark rounded-3"
+                >
+                  <li class="page-item">
                     <a class="page-link" href="#" aria-label="Previous">
                       <span aria-hidden="true">&laquo;</span>
                     </a>
                   </li>
-                  <li class="page-item active">
+                  <li class="page-item ">
                     <a class="page-link" href="#">1</a>
                   </li>
-                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item active"><a class="page-link" href="#">2</a></li>
                   <li class="page-item"><a class="page-link" href="#">3</a></li>
                   <li class="page-item">
                     <a class="page-link" href="#" aria-label="Next">
