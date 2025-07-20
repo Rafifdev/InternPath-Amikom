@@ -34,9 +34,13 @@
       }
 
       .pagination .active .page-link {
-        background-color: #000; /* Aktif tetap hitam */
+        background-color: #000;
         border-color: #000;
         color: #fff;
+      }
+
+      a {
+        text-decoration: none;
       }
     </style>
   </head>
@@ -62,10 +66,7 @@
               <p class="text-muted fs-5 mb-2">Menu</p>
               <ul class="nav flex-column">
                 <li class="nav-item">
-                  <a
-                    class="nav-link"
-                    href="dashboard.html"
-                  >
+                  <a class="nav-link" href="dashboard.html">
                     <i class="fa-solid fa-chart-pie"></i>
                     Dashboard
                   </a>
@@ -77,7 +78,7 @@
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active" href="#">
+                  <a class="nav-link" href="bimbingan.html">
                     <i class="fa-solid fa-folder"></i>
                     Data Bimbingan
                   </a>
@@ -95,7 +96,7 @@
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="sertifikat.html">
+                  <a class="nav-link active" href="sertifikat.html">
                     <i class="fa-solid fa-folder"></i>
                     Sertifikat
                   </a>
@@ -120,7 +121,7 @@
           <!-- Content Header start-->
           <div
             class="p-4 border-bottom border-black sticky-top"
-style="background-color : white;"
+            style="background-color: white"
           >
             <div class="mx-4 d-flex justify-content-between">
               <!-- title -->
@@ -131,7 +132,7 @@ style="background-color : white;"
                   class="fa-regular fa-window-maximize"
                   style="transform: rotate(-90deg)"
                 ></i>
-                <p class="m-0">Data Bimbingan</p>
+                <p class="m-0">Sertifikat</p>
               </div>
 
               <!-- search -->
@@ -169,7 +170,7 @@ style="background-color : white;"
           <!-- Content header end -->
 
           <!-- Main Content start-->
-          <main >
+          <main>
             <div class="d-md-none sidebar-toggle">
               <button class="btn btn-primary mb-3" type="button">
                 <i class="bi bi-list"></i> Menu
@@ -178,37 +179,6 @@ style="background-color : white;"
 
             <!-- Content Body Start -->
             <div class="container-fluid p-4">
-              <!-- Status -->
-              <div class="d-flex gap-4 mb-4">
-
-                <!-- Dosen -->
-                <div class="bg-dark text-light rounded-3" style="width: 33.3%">
-                  <div class="p-4">
-                    <p class="mb-3 fs-5">Dosen 📑</p>
-                    <h3>250</h3>
-                  </div>
-                </div>
-
-                <!-- Mahasiswa -->
-                <div class="bg-dark text-light rounded-3" style="width: 33.3%">
-                  <div class="p-4">
-                    <p class="mb-3 fs-5">Mahasiswa 📑</p>
-                    <h3>500</h3>
-                  </div>
-                </div>
-
-                <!-- Manipulasi Data -->
-                <div class="bg-dark text-light rounded-3" style="width: 33.3%">
-                  <div class="p-4">
-                    <p class="mb-3 fs-5">Manipulasi Data</p>
-                    <div class="d-flex justify-content-between">
-                      <p class="">➕ Tambah</p>
-                      <p class="">✏️ Edit</p>
-                      <p class="">➖ Hapus</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
 
               <!-- Table -->
               <div
@@ -221,9 +191,9 @@ style="background-color : white;"
                       <th scope="col">Nama</th>
                       <th scope="col">NIM</th>
                       <th scope="col">Prodi</th>
-                      <th scope="col">Dospem</th>
+                      <th scope="col">Nilai</th>
                       <th scope="col">Magang</th>
-                      <th scope="col">Jadwal</th>
+                      <th scope="col">Cetak Sertifikat</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -232,135 +202,135 @@ style="background-color : white;"
                       <td>Rafif labied alekhan</td>
                       <td>24.01.5148</td>
                       <td>D3TI</td>
-                      <td>Firman Asharudin, S.K</td>
+                      <td><a href="#">5148-nilai-sks-.pdf</a></td>
                       <td>PT. Mencari Cinta Sejati</td>
-                      <td> 23-5-2025</td>
+                      <td><a href="#">sertifikat.pdf 🖨️</a></td>
                     </tr>
                     <tr>
                       <th scope="row">2</th>
                       <td>Rafif labied alekhan lorem ip..</td>
                       <td>24.01.5148</td>
                       <td>D3TI</td>
-                      <td>Firman Asharudin, S.K</td>
+                      <td><a href="#">5148-nilai-sks-.pdf</a></td>
                       <td>PT. Mencari Cinta Sejati</td>
-                      <td> 23-5-2025</td>
+                      <td><a href="#">sertifikat.pdf 🖨️</a></td>
                     </tr>
                     <tr>
                       <th scope="row">3</th>
                       <td>Rafif labied alekhan lorem ip..</td>
                       <td>24.01.5148</td>
                       <td>D3TI</td>
-                      <td>Firman Asharudin, S.K</td>
+                      <td><a href="#">5148-nilai-sks-.pdf</a></td>
                       <td>PT. Mencari Cinta Sejati</td>
-                      <td> 23-5-2025</td>
+                      <td><a href="#">sertifikat.pdf 🖨️</a></td>
                     </tr>
                     <tr>
                       <th scope="row">4</th>
                       <td>Rafif labied alekhan lorem ip..</td>
                       <td>24.01.5148</td>
                       <td>D3TI</td>
-                      <td>Firman Asharudin, S.K</td>
+                      <td><a href="#">5148-nilai-sks-.pdf</a></td>
                       <td>PT. Mencari Cinta Sejati</td>
-                      <td> 23-5-2025</td>
+                      <td><a href="#">sertifikat.pdf 🖨️</a></td>
                     </tr>
                     <tr>
                       <th scope="row">5</th>
                       <td>Rafif labied alekhan lorem ip..</td>
                       <td>24.01.5148</td>
                       <td>D3TI</td>
-                      <td>Firman Asharudin, S.K</td>
+                      <td><a href="#">5148-nilai-sks-.pdf</a></td>
                       <td>PT. Mencari Cinta Sejati</td>
-                      <td> 23-5-2025</td>
+                      <td><a href="#">sertifikat.pdf 🖨️</a></td>
                     </tr>
                     <tr>
                       <th scope="row">6</th>
                       <td>Rafif labied alekhan lorem ip..</td>
                       <td>24.01.5148</td>
                       <td>D3TI</td>
-                      <td>Firman Asharudin, S.K</td>
+                      <td><a href="#">5148-nilai-sks-.pdf</a></td>
                       <td>PT. Mencari Cinta Sejati</td>
-                      <td> 23-5-2025</td>
+                      <td><a href="#">sertifikat.pdf 🖨️</a></td>
                     </tr>
                     <tr>
                       <th scope="row">7</th>
                       <td>Rafif labied alekhan lorem ip..</td>
                       <td>24.01.5148</td>
                       <td>D3TI</td>
-                      <td>Firman Asharudin, S.K</td>
+                      <td><a href="#">5148-nilai-sks-.pdf</a></td>
                       <td>PT. Mencari Cinta Sejati</td>
-                      <td> 23-5-2025</td>
+                      <td><a href="#">sertifikat.pdf 🖨️</a></td>
                     </tr>
                     <tr>
                       <th scope="row">8</th>
                       <td>Rafif labied alekhan lorem ip..</td>
                       <td>24.01.5148</td>
                       <td>D3TI</td>
-                      <td>Firman Asharudin, S.K</td>
+                      <td><a href="#">5148-nilai-sks-.pdf</a></td>
                       <td>PT. Mencari Cinta Sejati</td>
-                      <td> 23-5-2025</td>
+                      <td><a href="#">sertifikat.pdf 🖨️</a></td>
                     </tr>
                     <tr>
                       <th scope="row">9</th>
                       <td>Rafif labied alekhan lorem ip..</td>
                       <td>24.01.5148</td>
                       <td>D3TI</td>
-                      <td>Firman Asharudin, S.K</td>
+                      <td><a href="#">5148-nilai-sks-.pdf</a></td>
                       <td>PT. Mencari Cinta Sejati</td>
-                      <td> 23-5-2025</td>
+                      <td><a href="#">sertifikat.pdf 🖨️</a></td>
                     </tr>
                     <tr>
                       <th scope="row">10</th>
                       <td>Rafif labied alekhan lorem ip..</td>
                       <td>24.01.5148</td>
                       <td>D3TI</td>
-                      <td>Firman Asharudin, S.K</td>
+                      <td><a href="#">5148-nilai-sks-.pdf</a></td>
                       <td>PT. Mencari Cinta Sejati</td>
-                      <td> 23-5-2025</td>
+                      <td><a href="#">sertifikat.pdf 🖨️</a></td>
                     </tr>
                     <tr>
                       <th scope="row">11</th>
                       <td>Rafif labied alekhan lorem ip..</td>
                       <td>24.01.5148</td>
                       <td>D3TI</td>
-                      <td>Firman Asharudin, S.K</td>
+                      <td><a href="#">5148-nilai-sks-.pdf</a></td>
                       <td>PT. Mencari Cinta Sejati</td>
-                      <td> 23-5-2025</td>
+                      <td><a href="#">sertifikat.pdf 🖨️</a></td>
                     </tr>
                     <tr>
                       <th scope="row">12</th>
                       <td>Rafif labied alekhan lorem ip..</td>
                       <td>24.01.5148</td>
                       <td>D3TI</td>
-                      <td>Firman Asharudin, S.K</td>
+                      <td><a href="#">5148-nilai-sks-.pdf</a></td>
                       <td>PT. Mencari Cinta Sejati</td>
-                      <td> 23-5-2025</td>
+                      <td><a href="#">sertifikat.pdf 🖨️</a></td>
                     </tr>
                     <tr>
                       <th scope="row">13</th>
                       <td>Rafif labied alekhan lorem ip..</td>
                       <td>24.01.5148</td>
                       <td>D3TI</td>
-                      <td>Firman Asharudin, S.K</td>
+                      <td><a href="#">5148-nilai-sks-.pdf</a></td>
                       <td>PT. Mencari Cinta Sejati</td>
-                      <td> 23-5-2025</td>
+                      <td><a href="#">sertifikat.pdf 🖨️</a></td>
                     </tr>
                     <tr>
                       <th scope="row">14</th>
                       <td>Rafif labied alekhan lorem ip..</td>
                       <td>24.01.5148</td>
                       <td>D3TI</td>
-                      <td>Firman Asharudin, S.K</td>
+                      <td><a href="#">5148-nilai-sks-.pdf</a></td>
                       <td>PT. Mencari Cinta Sejati</td>
-                      <td> 23-5-2025</td>
+                      <td><a href="#">sertifikat.pdf 🖨️</a></td>
                     </tr>
                     <tr>
                       <th scope="row">15</th>
                       <td>Rafif labied alekhan lorem ip..</td>
                       <td>24.01.5148</td>
                       <td>D3TI</td>
-                      <td>Firman Asharudin, S.K</td>
+                      <td><a href="#">5148-nilai-sks-.pdf</a></td>
                       <td>PT. Mencari Cinta Sejati</td>
-                      <td> 23-5-2025</td>
+                      <td><a href="#">sertifikat.pdf 🖨️</a></td>
                     </tr>
                   </tbody>
                 </table>
@@ -376,10 +346,10 @@ style="background-color : white;"
                       <span aria-hidden="true">&laquo;</span>
                     </a>
                   </li>
-                  <li class="page-item ">
+                  <li class="page-item active">
                     <a class="page-link" href="#">1</a>
                   </li>
-                  <li class="page-item active"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
                   <li class="page-item"><a class="page-link" href="#">3</a></li>
                   <li class="page-item">
                     <a class="page-link" href="#" aria-label="Next">

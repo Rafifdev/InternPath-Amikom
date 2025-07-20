@@ -1,272 +1,245 @@
 <!DOCTYPE html>
 <html lang="id">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dashboard - Universitas Amikom Yogyakarta</title>
-    <link rel="icon" href="assets/icon/favicon.png" type="image/x-icon" />
-    <!-- css -->
-    <link rel="stylesheet" href="assets/css/dashboard.css" />
-    <!-- Bootstrap -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <!-- Font awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    />
 
-    <style>
-      p {
-        padding: 0;
-        margin: 0;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard - Universitas Amikom Yogyakarta</title>
+  <link rel="icon" href="assets/icon/favicon.png" type="image/x-icon" />
+  <!-- css -->
+  <link rel="stylesheet" href="assets/css/dashboard.css" />
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 
-      .pagination .page-link {
-        color: #000; /* Teks putih */
-      }
+  <style>
+    p {
+      padding: 0;
+      margin: 0;
+    }
 
-      .pagination .page-link:hover {
-        background-color: #333; /* Hitam lebih terang saat hover */
-        color: #fff;
-      }
+    .pagination .page-link {
+      color: #000;
+      /* Teks putih */
+    }
 
-      .pagination .active .page-link {
-        background-color: #000; /* Aktif tetap hitam */
-        border-color: #000;
-        color: #fff;
-      }
+    .pagination .page-link:hover {
+      background-color: #333;
+      /* Hitam lebih terang saat hover */
+      color: #fff;
+    }
 
-      a {
-        text-decoration: none;
-      }
-    </style>
-  </head>
+    .pagination .active .page-link {
+      background-color: #000;
+      /* Aktif tetap hitam */
+      border-color: #000;
+      color: #fff;
+    }
 
-  <body>
-    <div class="container-fluid">
-      <div class="row">
-        <!-- Sidebar -->
-        <nav
-          class="col-md-3 col-lg-2 d-md-block sidebar collapse border-end border-black position-fixed"
-          style="height: 100%"
-          id="sidebar"
-        >
-          <div class="d-flex flex-column h-100">
-            <!-- Sidebar Header -->
-            <div class="p-4 pb-2 d-flex gap-3">
-              <i class="fa-solid fa-user mt-2"></i>
-              <h5 class="mt-1">Admin D</h5>
-            </div>
+    a {
+      text-decoration: none;
+    }
+  </style>
+</head>
 
-            <!-- Sidebar Menu -->
-            <div class="sidebar-menu flex-grow-1 px-3">
-              <p class="text-muted fs-5 mb-2">Menu</p>
-              <ul class="nav flex-column">
-                <li class="nav-item">
-                  <a class="nav-link" href="dashboard.html">
-                    <i class="fa-solid fa-chart-pie"></i>
-                    Dashboard
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="approval.html">
-                    <i class="fa-solid fa-folder"></i>
-                    Approval
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="bimbingan.html">
-                    <i class="fa-solid fa-folder"></i>
-                    Data Bimbingan
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="magang.html">
-                    <i class="fa-solid fa-folder"></i>
-                    Laporan Magang
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" href="penilaian.html">
-                    <i class="fa-solid fa-folder"></i>
-                    Penilaian
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="sertifikat.html">
-                    <i class="fa-solid fa-folder"></i>
-                    Sertifikat
-                  </a>
-                </li>
-              </ul>
-            </div>
-
-            <!-- Sidebar Footer -->
-            <div class="sidebar-footer text-center">
-              <img
-                src="assets/icon/amikom.svg"
-                alt="amikom"
-                class="mb-4"
-                style="width: 80%"
-              />
-            </div>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <!-- Sidebar -->
+      <nav class="col-md-3 col-lg-2 d-md-block sidebar collapse border-end border-black position-fixed"
+        style="height: 100%" id="sidebar">
+        <div class="d-flex flex-column h-100">
+          <!-- Sidebar Header -->
+          <div class="p-4 pb-2 d-flex gap-3">
+            <i class="fa-solid fa-user mt-2"></i>
+            <h5 class="mt-1">Admin D</h5>
           </div>
-        </nav>
 
-        <!-- Body content start -->
-        <div class="col-md-9 ms-sm-auto col-lg-10 main-content px-0">
-
-          <!-- Content Header start-->
-          <div class="p-4 border-bottom border-black sticky-top" style="background-color : white;">
-            <div class="mx-4 d-flex justify-content-between">
-              <!-- title -->
-              <div
-                class="d-flex justify-content-center align-items-center gap-3"
-              >
-                <i
-                  class="fa-regular fa-window-maximize"
-                  style="transform: rotate(-90deg)"
-                ></i>
-                <p class="m-0">Penilaian</p>
-              </div>
-
-              <!-- search -->
-              <div class="input-group w-50">
-                <input
-                  type="text"
-                  class="form-control border-black"
-                  id="search-button"
-                />
-                <button class="btn btn-dark" type="button" id="search-button">
-                  Search
-                </button>
-              </div>
-
-              <!-- button -->
-              <div class="dropdown">
-                <button
-                  class="btn btn-dark px-3"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Profile
-                  <i class="fa-solid fa-bars ms-3"></i>
-                </button>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Account</a></li>
-                  <li>
-                    <a class="dropdown-item" href="login.html">Logout</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
+          <!-- Sidebar Menu -->
+          <div class="sidebar-menu flex-grow-1 px-3">
+            <p class="text-muted fs-5 mb-2">Menu</p>
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link" href="dashboard.html">
+                  <i class="fa-solid fa-chart-pie"></i>
+                  Dashboard
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="approval.html">
+                  <i class="fa-solid fa-folder"></i>
+                  Approval
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="bimbingan.html">
+                  <i class="fa-solid fa-folder"></i>
+                  Data Bimbingan
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="magang.html">
+                  <i class="fa-solid fa-folder"></i>
+                  Laporan Magang
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="penilaian.html">
+                  <i class="fa-solid fa-folder"></i>
+                  Penilaian
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="sertifikat.html">
+                  <i class="fa-solid fa-folder"></i>
+                  Sertifikat
+                </a>
+              </li>
+            </ul>
           </div>
-          <!-- Content header end -->
 
-          <!-- Main Content start-->
-          <main>
-            <div class="d-md-none sidebar-toggle">
-              <button class="btn btn-primary mb-3" type="button">
-                <i class="bi bi-list"></i> Menu
+          <!-- Sidebar Footer -->
+          <div class="sidebar-footer text-center">
+            <img src="assets/icon/amikom.svg" alt="amikom" class="mb-4" style="width: 80%" />
+          </div>
+        </div>
+      </nav>
+
+      <!-- Body content start -->
+      <div class="col-md-9 ms-sm-auto col-lg-10 main-content px-0">
+
+        <!-- Content Header start-->
+        <div class="p-4 border-bottom border-black sticky-top" style="background-color : white;">
+          <div class="mx-4 d-flex justify-content-between">
+            <!-- title -->
+            <div class="d-flex justify-content-center align-items-center gap-3">
+              <i class="fa-regular fa-window-maximize" style="transform: rotate(-90deg)"></i>
+              <p class="m-0">Penilaian</p>
+            </div>
+
+            <!-- search -->
+            <div class="input-group w-50">
+              <input type="text" class="form-control border-black" id="search-button" />
+              <button class="btn btn-dark" type="button" id="search-button">
+                Search
               </button>
             </div>
 
-            <!-- Content Body Start -->
-            <div class="container-fluid p-4">
-              <!-- Status -->
-              <div class="d-flex gap-4 mb-4">
-                <!-- Mahasiswa -->
-                <div class="bg-dark text-light rounded-3" style="width: 33.3%">
-                  <div class="p-4">
-                    <p class="mb-3 fs-5">Mahasiswa 📑</p>
-                    <h3>40</h3>
-                  </div>
-                </div>
+            <!-- button -->
+            <div class="dropdown">
+              <button class="btn btn-dark px-3" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Profile
+                <i class="fa-solid fa-bars ms-3"></i>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Account</a></li>
+                <li>
+                  <a class="dropdown-item" href="login-admin.html">Logout</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Content header end -->
 
-                <!-- Dinilai -->
-                <div class="bg-dark text-light rounded-3" style="width: 33.3%">
-                  <div class="p-4">
-                    <p class="mb-3 fs-5">Dinilai ✅</p>
-                    <h3>30</h3>
-                  </div>
-                </div>
+        <!-- Main Content start-->
+        <main>
+          <div class="d-md-none sidebar-toggle">
+            <button class="btn btn-primary mb-3" type="button">
+              <i class="bi bi-list"></i> Menu
+            </button>
+          </div>
 
-                <!-- Belum Dinilai -->
-                <div class="bg-dark text-light rounded-3" style="width: 33.3%">
-                  <div class="p-4">
-                    <p class="mb-3 fs-5">Belum Dinilai ❌</p>
-                    <h3>10</h3>
-                  </div>
+          <!-- Content Body Start -->
+          <div class="container-fluid p-4">
+            <!-- Status -->
+            <div class="d-flex gap-4 mb-4">
+              <!-- Mahasiswa -->
+              <div class="bg-dark text-light rounded-3" style="width: 33.3%">
+                <div class="p-4">
+                  <p class="mb-3 fs-5">Mahasiswa 📑</p>
+                  <h3>40</h3>
                 </div>
               </div>
 
-              <!-- Form start -->
-              <div class="container">
-                  <!-- Data pendidikan start -->
-                  <div class="mt-4">
-                    <h5 class="mb-3">Data pendidikan</h5>
-                    <div class="my-3">
-                      <label for="fakultas" class="mb-1">Fakultas</label>
-                      <select
-                        class="form-select border border-dark p-2"
-                        id="fakultas"
-                      >
-                        <option value="fik">Fakultas Ilmu Komputer</option>
-                        <option value="fes">Fakulats Ekonomi & Social</option>
-                        <option value="fst">Fakultas Sains & Teknologi</option>
-                      </select>
-                    </div>
-                    <div class="my-3">
-                      <label for="studi" class="mb-1">Program Studi</label>
-                      <select
-                        class="form-select border border-dark p-2"
-                        id="studi"
-                      >
-                        <option value="d3ti">D3 Teknik Informatika</option>
-                        <option value="d3mi">D3 Manajemen Informatika</option>
-                        <option value="tekom">Teknik Komputer</option>
-                        <option value="inf">Informatika</option>
-                        <option value="ti">Teknik Informatika</option>
-                        <option value="si">Sistem Informasi</option>
-                      </select>
-                    </div>
-                    <div class="my-3">
-                      <label for="semester" class="mb-1">Semester</label>
-                      <select
-                        class="form-select border border-dark p-2"
-                        id="semester"
-                      >
-                        <option value="sms1">Semester 1</option>
-                        <option value="sms2">Semester 2</option>
-                        <option value="sms3">Semester 3</option>
-                        <option value="sms4">Semester 4</option>
-                        <option value="sms5">Semester 5</option>
-                        <option value="sms6">Semester 6</option>
-                        <option value="sms7">Semester 7</option>
-                        <option value="sms8">Semester 8</option>
-                      </select>
-                    </div>
-                  </div>
-                  <!-- Data pendidikan end -->
+              <!-- Dinilai -->
+              <div class="bg-dark text-light rounded-3" style="width: 33.3%">
+                <div class="p-4">
+                  <p class="mb-3 fs-5">Dinilai ✅</p>
+                  <h3>30</h3>
+                </div>
+              </div>
 
-                  <button class="btn btn-dark p-2 mt-4" style="width: 100%">
-                    Submit
-                  </button>
+              <!-- Belum Dinilai -->
+              <div class="bg-dark text-light rounded-3" style="width: 33.3%">
+                <div class="p-4">
+                  <p class="mb-3 fs-5">Belum Dinilai ❌</p>
+                  <h3>10</h3>
+                </div>
+              </div>
+            </div>
+
+            <!-- Form start -->
+            <div class="container">
+              <!-- Penilaian Prodi start -->
+              <div class="mt-4">
+                <h5 class="mb-3">Penilaian Prodi D3TI (01)</h5>
+
+                <div class="my-3">
+                  <label for="nama" class="mb-1">Daftar Nama</label>
+                  <select class="form-select border border-dark p-2" id="nama">
+                    <option value="1">Rafif labied alekhan</option>
+                    <option value="2">Labied rafif alekhan</option>
+                    <option value="3">Alekhan rafif labied</option>
+                  </select>
+                </div>
+
+                <div class="my-3">
+                  <label for="nim" class="mb-1">NIM / NPM</label>
+                  <input type="text" value="24.01.5148" class="form-control p-2 border border-black"
+                    readonly id="nim" />
+                </div>
+
+                <div class="my-3">
+                  <label for="logbook" class="mb-1">Logbook</label>
+                  <input type="text" value="5148-logbook.pdf" class="form-control p-2 border border-black text-primary pointer" style="cursor: pointer;" readonly id="logbook"/>
+                </div>
+
+                <div class="my-3">
+                  <label for="nialaiPerusahaan" class="mb-1">Penilaian Perusahaan</label>
+                  <input type="text" value="5148-penilaian-perusahaan.pdf" class="form-control p-2 border border-black text-primary pointer" style="cursor: pointer;" readonly id="nialaiPerusahaan"/>
+                </div>
+
+                <div class="my-3">
+                  <label for="nilai" class="mb-1">Berikan Nilai</label>
+                  <select class="form-select border border-dark p-2" id="nilai">
+                    <option value="a">A</option>
+                    <option value="b">B</option>
+                    <option value="c">C</option>
+                    <option value="d">D</option>
+                    <option value="e">E</option>
+                  </select>
+                </div>
+              </div>
+              <!-- Penilaian Prodi end -->
+
+              <button class="btn btn-dark p-2 mt-4" style="width: 100%">
+                Submit
+              </button>
               <!-- Form end -->
+
             </div>
 
             <!-- Content body end -->
-          </main>
-          <!-- Main content end -->
-        </div>
-        <!-- Body content end -->
+        </main>
+        <!-- Main content end -->
       </div>
+      <!-- Body content end -->
     </div>
+  </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
-  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+
 </html>
